@@ -133,4 +133,25 @@
       <Name>BethanysPieShopXamarin</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="basket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="bethanylogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="contact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="icpie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="patternwide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="pie.png" />
+  </ItemGroup>
 </Project>
