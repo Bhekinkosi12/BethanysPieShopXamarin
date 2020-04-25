@@ -12,7 +12,8 @@ namespace BethanysPieShopXamarin
 
             // MainPage = new MainPage();
             // MainPage = new LoginView();
-            MainPage = new RegisterView();
+            // MainPage = new RegisterView();
+            MainPage = new ContactView();
         }
 
         protected override void OnStart()
