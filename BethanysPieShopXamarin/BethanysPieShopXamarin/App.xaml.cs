@@ -19,7 +19,8 @@ namespace BethanysPieShopXamarin
             // MainPage = new PieDetailView();
 
             // MainPage = new ContentPageView();
-            MainPage = new NavigationPage(new NavigationPageView());
+            // MainPage = new NavigationPage(new NavigationPageView());
+            MainPage = new TabbedPageView();
         }
 
         protected override void OnStart()
