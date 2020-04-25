@@ -27,7 +27,7 @@
                HorizontalTextAlignment="Center" 
                VerticalTextAlignment="Center"></Label>
 
-        <Picker x:Name="LanguagePickerFromXaml" 
+        <!--<Picker x:Name="LanguagePickerFromXaml" 
                 Grid.Row="1" 
                 Grid.ColumnSpan="2"
                 Title="Select your language for this app">
@@ -39,8 +39,16 @@
                     <x:String>German</x:String>
                 </x:Array>
             </Picker.ItemsSource>
-        </Picker>
-        
+        </Picker>-->
+
+        <Picker x:Name="LanguagePickerFromCode" 
+                Grid.Row="1" 
+                Grid.ColumnSpan="2" 
+                Title="Select your language for this app" 
+                SelectedIndexChanged="LanguagePickerFromCode_OnSelectedIndexChanged"></Picker>
+        <Label x:Name="SelectedLanguageLabel" 
+               Grid.Row="2"></Label>
+
         <Label Text="Preferred monthly budget for pies" 
                Grid.Row="3"></Label>
         <Slider x:Name="PieBudgetSlider" 

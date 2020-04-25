@@ -15,6 +15,23 @@ namespace BethanysPieShopXamarin
         public SettingsView()
         {
             InitializeComponent();
+            LoadData();
+        }
+
+        private void LoadData()
+        {
+            var langaugeList = new List<string> { "English", "Dutch", "French", "German" };
+            LanguagePickerFromCode.ItemsSource = langaugeList;
+        }
+
+        private void LanguagePickerFromCode_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+            var selectedIndex = ((Picker)sender).SelectedIndex;
+
+            if (selectedIndex != -1)
+            {
+                SelectedLanguageLabel.Text = (string)LanguagePickerFromCode.ItemsSource[selectedIndex];
+            }
         }
 
         private void PieBudgetSlider_OnValueChanged(object sender, ValueChangedEventArgs e)
