@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BethanysPieShopXamarin.PieOverview">
+    <Grid>
+        <ListView VerticalOptions="FillAndExpand" 
+                  x:Name="PiesListView" 
+                  CachingStrategy="RecycleElement" 
+                  ItemSelected="PiesListView_OnItemSelected" 
+                  IsPullToRefreshEnabled="True" >
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Apple Pie</x:String>
+                    <x:String>Strawberry Cheese Cake</x:String>
+                    <x:String>Strawberry Pie</x:String>
+                    <x:String>Rhubarb Pie</x:String>
+                    <x:String>Blueberry Cheese Cake</x:String>
+                    <x:String>Cheese Cake</x:String>
+                    <x:String>Cherry Pie</x:String>
+                    <x:String>Christmas Apple Pie</x:String>
+                    <x:String>Cranberry Pie</x:String>
+                    <x:String>Peach Pie</x:String>
+                    <x:String>Pumpkin Pie</x:String>
+                </x:Array>
+            </ListView.ItemsSource>
+        </ListView>
+    </Grid>
+</ContentPage>

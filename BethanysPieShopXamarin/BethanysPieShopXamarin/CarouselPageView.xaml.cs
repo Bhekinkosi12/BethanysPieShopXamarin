@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace BethanysPieShopXamarin
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class CarouselPageView : c
+    public partial class CarouselPageView : CarouselPage
     {
         public CarouselPageView()
         {
