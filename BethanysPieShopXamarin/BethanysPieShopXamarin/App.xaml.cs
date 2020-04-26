@@ -25,7 +25,14 @@ namespace BethanysPieShopXamarin
             // MainPage = new CarouselPageView();
 
             // ListView
-            MainPage = new PieOverview();
+            // MainPage = new PieOverview();
+
+            var alreadyRegistered = true;
+
+            if (alreadyRegistered)
+                MainPage = new MainView();
+            else
+                MainPage = new NavigationPage(new LoginView());
 
         }
 

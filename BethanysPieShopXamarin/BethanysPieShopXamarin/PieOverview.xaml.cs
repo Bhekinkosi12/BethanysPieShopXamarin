@@ -159,7 +159,7 @@ namespace BethanysPieShopXamarin
         private async void PiesListView_OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var selectedPie = e.SelectedItem as Pie;
-
+            await Navigation.PushAsync(new PieDetailView(selectedPie));
         }
     }
 }
