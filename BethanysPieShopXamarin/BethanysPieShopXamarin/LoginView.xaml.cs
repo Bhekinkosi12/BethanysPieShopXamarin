@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace BethanysPieShopXamarin
@@ -9,6 +10,12 @@ namespace BethanysPieShopXamarin
 		public LoginView()
 		{
 			InitializeComponent();
+		}
+
+		private async void LoginButton_OnClicked(object sender, EventArgs e)
+		{
+			Navigation.InsertPageBefore(new MainView(), this);
+			await Navigation.PopAsync();
 		}
 	}
 }

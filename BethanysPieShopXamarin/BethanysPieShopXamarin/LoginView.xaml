@@ -54,6 +54,8 @@
                 BackgroundColor="#22cfa7" 
                 Grid.Row="4" 
                 Grid.ColumnSpan="2" 
-                TextColor="White"></Button>
+                TextColor="White"
+                x:Name="LoginButton" 
+                Clicked="LoginButton_OnClicked"></Button>
     </Grid>
 </ContentPage>
