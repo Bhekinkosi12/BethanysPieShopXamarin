@@ -31,6 +31,12 @@ namespace BethanysPieShopXamarin
             BindData(pie);
         }
 
+        public PieDetailView(Pie pie)
+        {
+            InitializeComponent();
+            BindData(pie);
+        }
+
         private void BindData(Pie pie)
         {
             PieNameLabel.Text = pie.PieName;

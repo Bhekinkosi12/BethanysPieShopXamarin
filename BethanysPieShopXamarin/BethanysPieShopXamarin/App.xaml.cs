@@ -26,6 +26,7 @@ namespace BethanysPieShopXamarin
 
             // ListView
             MainPage = new PieOverview();
+
         }
 
         protected override void OnStart()
