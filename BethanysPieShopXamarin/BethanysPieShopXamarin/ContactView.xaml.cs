@@ -12,9 +12,9 @@ namespace BethanysPieShopXamarin
             InitializeComponent();
         }
 
-        private void SendMessageButton_OnClicked(object sender, EventArgs e)
+        private async void SendMessageButton_OnClicked(object sender, EventArgs e)
         {
-            DisplayAlert("Success", "Message sent successfully", "Done");
+           await  this.DisplayAlert("Success", "Message sent successfully", "Done");
 
         }
 
